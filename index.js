@@ -1,0 +1,1 @@
+/*This will be the entry point for the app. To be written with express.js*/

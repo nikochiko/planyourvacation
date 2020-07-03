@@ -1,0 +1,22 @@
+{
+  "name": "planyourvacation",
+  "version": "0.1.0",
+  "description": "One-stop place to plan for your vacation",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nikochiko/planyourvacation.git"
+  },
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/nikochiko/planyourvacation/issues"
+  },
+  "homepage": "https://github.com/nikochiko/planyourvacation#readme",
+  "dependencies": {
+    "express.js": "^1.0.0"
+  }
+}
