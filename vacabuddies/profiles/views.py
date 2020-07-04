@@ -1,6 +1,6 @@
 from django.contrib.auth import authenticate, get_user_model, login
 from django.core.exceptions import ValidationError
-from django.shortcuts import render, redirect
+from django.shortcuts import redirect, render
 
 from .utils import get_error_messages
 
