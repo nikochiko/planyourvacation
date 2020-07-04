@@ -6,6 +6,7 @@ from .utils import get_error_messages
 
 User = get_user_model()
 
+
 def auth(request):
     if request.method == 'POST':
         if request.POST.get('reg_username'):
