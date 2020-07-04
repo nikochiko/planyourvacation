@@ -26,9 +26,10 @@ def auth(request):
                 new_user.full_clean()
             except ValidationError as e:
                 errors = "\n".join(get_error_messages(e))
-                return render(
-                    request, "profiles/index.html", {"success": False, "error": errors}
-                )
+                return render(request, "profiles/index.html", {
+                    "success": False,
+                    "error": errors
+                })
 
             new_user.save()
 
@@ -47,7 +48,10 @@ def auth(request):
                 return render(
                     request,
                     "profiles/login.html",
-                    {"success": False, "error": "Invalid credentials",},
+                    {
+                        "success": False,
+                        "error": "Invalid credentials",
+                    },
                 )
         else:
             return render(request, "profiles/index.html")
