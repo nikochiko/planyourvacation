@@ -33,7 +33,7 @@ def register(request):
         return redirect(request, '')
 
 
-def login(request):
+def login_view(request):
     if request.method == 'POST':
         username = request.POST['login_username']
         password = request.POST['login_password']
