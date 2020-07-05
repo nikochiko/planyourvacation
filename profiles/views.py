@@ -27,7 +27,7 @@ def register(request):
 
         new_user.save()
 
-        login(request, user)
+        login(request, new_user)
         return redirect(request, '')
     else:
         return redirect(request, '')
