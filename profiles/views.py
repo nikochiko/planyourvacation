@@ -48,12 +48,12 @@ def login_view(request):
                 'error': 'Invalid credentials',
             })
     else:
-        return render(request, 'profiles/index.html')
+        return redirect('home')
 
 
 def home(request):
     if request.user.is_authenticated:
-        return render(request, 'profiles/home.html')
+        return render(request, 'profiles/home.html', {'user': make_user_dict(request.user), 'trips': [make_trip_dict(trip) for trip in Trip.objects.all()]})
     else:
         return render(request, 'profiles/index.html')
 
