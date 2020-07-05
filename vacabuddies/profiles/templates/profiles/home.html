@@ -31,53 +31,13 @@
             <div id="navuserimg_container">
               <img id="navuserimg" src="{% static "profiles/9127a595d3a3421d984edc45230f6d9a.jpg" %}" />
             </div>
-            <div id="navname">Jamie</div>
+            <div id="navname">{{ user.name }}</div>
           </div>
         </a>
       </div>
     </div>
 
     <div id="main_container">
-
-      <!-- <div class="left_container">
-
-        <div class="profile_container container">
-
-          <div class="profileimg_container">
-            <img class="profileimg" src="{% static "profiles/9127a595d3a3421d984edc45230f6d9a.jpg" %}" />
-          </div>
-          <div class="nameusername">
-            <div class="name"> Jamie Clarke </div>
-            <div class="username"> @jamie_21 </div>
-          </div>
-          <hr class="nameusername_sep" />
-
-          <div class="userinfo_container">
-            <div class="userinfotitle"> About me </div>
-            <div class="userinfo">
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-            </div>
-          </div>
-
-          <div class="userinfo_container">
-            <div class="userinfotitle"> Interests </div>
-            <div class="userinfo">
-              Reading, Music, Sports, Anime, Gaming, Cycling, Exploration, Science, Technology
-            </div>
-          </div>
-
-          <div class="userinfo_container">
-            <div class="userinfotitle"> Likes </div>
-            <div class="userinfo">
-              230
-            </div>
-          </div>
-
-        </div>
-
-        <button class="likeplanbutton container"> Like </button>
-
-      </div> -->
 
       <div class="right_container">
 
@@ -92,25 +52,25 @@
                 <div class="tripuserimg_container">
                   <img class="tripuserimg" src="{% static "profiles/9127a595d3a3421d984edc45230f6d9a.jpg" %}" />
                 </div>
-                <div class="tripusername">@jamie_21</div>
+                <div class="tripusername">{{ user.username }}</div>
               </div>
               <div class="tripimg_container">
                 <img class="tripimg" src="{% static "profiles/IMG_71554.jpg" %}" />
               </div>
               <div class="tripdetials">
-                <div class="triptitle">Backpacking through Barcelona</div>
+                <div class="triptitle">{{ trip.title }}</div>
                 <hr class="just_sep" />
-                <div class="tripdate">Date: 5 Jan 2020</div>
-                <div class="tripelocation">Location: Barcelona</div>
+                <div class="tripdate">Date: {{ trip.date }}</div>
+                <div class="tripelocation">Location: {{ trip.location }}</div>
                 <hr class="just_sep" />
                 <div class="tripinfo">
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure d
+                  {{ trip.description }}
                 </div>
               </div>
               <button class="tripinterested"> Interested </button>
             </div>
 
-            <div class="itrip_container">
+            <!-- <div class="itrip_container">
               <div class="tripuserinfo">
                 <div class="tripuserimg_container">
                   <img class="tripuserimg" src="{% static "profiles/9127a595d3a3421d984edc45230f6d9a.jpg" %}" />
@@ -246,7 +206,7 @@
                 </div>
               </div>
               <button class="tripinterested"> Interested </button>
-            </div>
+            </div> -->
 
           </div>
         </div>
