@@ -1,0 +1,131 @@
+  #main_container {
+    padding: 60px 5em 0 5em;
+  }
+
+  #hero {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 35em;
+    height: 80%;
+    /* margin-left: 5em; */
+    padding: 10px 3em;
+    /* background-color: rgba(0, 0, 0, 0.7); */
+    color: #fff;
+  }
+
+  #title {
+    padding-bottom: 10px;
+    font-family: 'Eagle Lake', sans-serif;
+    font-size: 1.5em;
+  }
+
+  #maininfo {
+    padding-bottom: 12px;
+    font-size: 3.8em;
+  }
+
+  #subinfo {
+    padding-bottom: 10px;
+    font-size: 1.2em;
+  }
+
+  #explore {
+    display: block;
+    width: 10em;
+    margin: auto;
+    padding: 20px;
+    background-color: #FEBC70;
+    color: white;
+    border: 0px;
+    text-align: center;
+  }
+
+  #entryform_container {
+    width: 20em;
+    /* margin-right: 5em; */
+    color: white;
+  }
+
+  .formcontainer {
+    background-color: rgba(254, 188, 112, 0.25);
+    border-radius: 24px;
+  }
+
+  .formtitle {
+    padding: 16px;
+    font-size: 2em;
+    text-align: center;
+  }
+
+  .formtitle_sep {
+    display: block;
+    width: 10em;
+    margin: auto;
+    border: 1px solid #aaa;
+  }
+
+  .logingoogle {
+    width: 10em;
+    margin: 10px auto;
+  }
+
+  .google {
+    width: 100%;
+  }
+
+  .or {
+    margin: 5px 0;
+    font-size: 1.5em;
+    text-align: center;
+  }
+
+  .theform {
+    padding: 0 10px 15px 10px;
+  }
+
+  .inputsec {
+    display: block;
+    width: 11.9em;
+    margin: auto;
+    padding: 7px 0;
+  }
+
+  input {
+    display: block;
+    outline: none;
+  }
+
+  lable {
+    font-size: 0.8em;
+  }
+
+  .infoinputs {
+    padding: 7px;
+    border: 1px solid #aaa;
+    border-radius: 10px;
+  }
+
+  .submit_button {
+    display: block;
+    margin: 10px auto;
+    padding: 15px;
+    background-color: #3F8B7E;
+    color: white;
+    font-size: 1.2em;
+    border: none;
+    border-radius: 16px;
+  }
+
+  .otherform {
+    font-size: 0.8em;
+    text-align: center;
+  }
+
+  .buttontootherform {
+    cursor: pointer;
+    color: #66deca;
+  }
+
+  .buttontootherform:hover {
+    text-decoration: underline;
+  }

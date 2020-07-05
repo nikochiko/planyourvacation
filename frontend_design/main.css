@@ -1,0 +1,257 @@
+  @import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400&display=swap');
+
+  * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+
+  html {
+    height: 100%;
+  }
+
+  body {
+    height: 100%;
+    font-family: Ubuntu, sans-serif;
+    background: url('mountain-2880x1800-minimal-half-moon-hd-4792.jpg');
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    color: white;
+  }
+
+  input, button {
+    outline: none;
+  }
+
+  ::selection {
+    color: ;
+    background-color: ;
+  }
+
+  ::-webkit-scrollbar {
+  width: 10px;
+  }
+
+  /* Track */
+  ::-webkit-scrollbar-track {
+    border-radius: 10px;
+    background: #f1f1f1;
+  }
+
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #ccc;
+    border-radius: 10px;
+  }
+
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #aaa;
+  }
+
+  #navbar {
+    position: fixed;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    padding: 1em 2.5em;
+    /* background-color: rgba(0, 0, 0, 0.7); */
+  }
+
+  #logo {
+    font-family: 'Eagle Lake', sans-serif;
+    font-size: 1.5em;
+    color: white;
+  }
+
+  #navleft {
+    display: flex;
+    margin-left: auto;
+  }
+
+  #logo a {
+    color: #fff;
+    text-decoration: none;
+  }
+
+  .navitem {
+    display: flex;
+    align-items: center;
+    padding: ;
+    margin: 0 10px;
+    padding: 0 10px;
+    text-decoration: none;
+    color: white;
+    background-color: rgba(255, 255, 255, 0.5);
+    border-radius: 10px;
+  }
+
+  .profilenav {
+    padding: 0;
+    padding-right: 20px;
+    border-radius: 1000px;
+  }
+
+  #navprofile {
+    display: flex;
+    align-items: center;
+    border-radius: 1000px;
+    padding-left: 0;
+    padding-rignt: 20px;
+    cursor: pointer;
+  }
+
+  #navuserimg_container {
+    width: 40px;
+    height: 40px;
+    margin-right: 5px;
+    border-radius: 100%;
+    overflow: hidden;
+  }
+
+  #navuserimg {
+    width: 40px;
+    height: 40px;
+    object-fit: cover;
+    object-position: center;
+  }
+
+  .regloginnav {
+    margin-left: auto;
+    padding: 10px;
+    background-color: rgba(255, 255, 255, 0.5);
+    font-family: sans-serif;
+    color: white;
+    border-radius: 10px;
+    cursor: pointer;
+  }
+
+  #main_container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+    padding: 60px 2em 0 2em;
+  }
+
+  .container {
+    background-color: rgba(254, 188, 112, 0.25);
+    border-radius: 24px;
+  }
+
+  .left_container {
+    height: 100%;
+  }
+
+  .right_container {
+    height: 100%;
+    width: 77%;
+    margin: auto;
+  }
+
+  .alltrips_container {
+    position: relative;
+    height: 95%;
+    border-radius: 24px;
+    overflow: auto;
+  }
+
+  .itrip_container {
+    max-width: 17em;
+    margin-bottom: 20px;
+    border-radius: 16px;
+    background-color: rgba(0, 0, 0, 0.4);
+  }
+
+  .trips_container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-top: 20px;
+    padding: 20px;
+    padding-bottom: 0;
+  }
+
+  .tripuserinfo {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+  }
+
+  .tripuserimg_container {
+    width: 40px;
+    height: 40px;
+    margin-right: 10px;
+    border-radius: 100%;
+    overflow: hidden;
+  }
+
+  .tripuserimg {
+    width: 40px;
+    height: 40px;
+    object-fit: cover;
+    object-position: center;
+  }
+
+  .tripimg_container {
+    width: 100%;
+    height: 130px;
+    overflow: hidden;
+  }
+
+  .tripimg {
+    width: 100%;
+    height: 130px;
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+  }
+
+  .tripdetials {
+    padding: 10px;
+  }
+
+  .triptitle {
+    font-size: 1.2em;
+  }
+
+  .tripdate {
+    font-size: 0.8em;
+  }
+
+  .tripelocation {
+    margin-bottom: 5px;
+    font-size: 0.8em;
+  }
+
+  .just_sep {
+    width: 90%;
+    margin: 5px 0;
+    border: 1px solid #ddd;
+  }
+
+  .tripinterested {
+    display: block;
+    margin: auto;
+    margin-bottom: 10px;
+    padding: 10px;
+    color: white;
+    font-size: 1.1em;
+    background-color: #3F8B7E;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+  }
+
+  .tripinterested:hover {
+    background-color: #3ba391;
+  }
+
+  .errors {
+    color: red;
+  }
+
+  .hidden {
+    display: none;
+  }
