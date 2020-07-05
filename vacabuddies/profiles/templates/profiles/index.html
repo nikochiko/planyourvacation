@@ -22,7 +22,7 @@
   <body>
 
     <div id="navbar">
-      <div id="logo"> VacaBuddies </div>
+      <div id="logo"><a href="#"> VacaBuddies </a></div>
       <div class="regloginnav" id="loginnav" onclick="showlogin()"> Login </div>
       <div class="regloginnav hidden" id="regnav" onclick="showreg()"> Register </div>
     </div>
@@ -61,7 +61,7 @@
 
           <hr class="formtitle_sep">
 
-          <form class="theform" method="post">
+          <form class="theform" method="post" action="/auth/register">
             {% csrf_token %}
             <div class="inputsec">
               <label for="reg_name">Name:</label>
@@ -72,12 +72,14 @@
               <input class="infoinputs" type="email" id="reg_email" name="reg_email" required />
             </div>
             <div class="inputsec">
+              <label for="reg_password2">Username:</label>
+              <input class="infoinputs" type="text" id="username" name="username" required />
+            </div>
+            <div class="inputsec">
               <label for="reg_password1">Password:</label>
               <input class="infoinputs" type="password" id="reg_password1" name="reg_password1" required />
             </div>
-            <div class="inputsec">
-              <label for="reg_password2">Confirm Password:</label>
-              <input class="infoinputs" type="password" id="reg_password2" name="reg_password2" required />
+            <div class="inputsec errors">
             </div>
             <input class="submit_button" type="submit" value="Register" />
             <div class="otherform"> Already have an account? <span class="buttontootherform" onclick="showlogin()">Login here</span></div>
@@ -102,15 +104,17 @@
 
           <hr class="formtitle_sep">
 
-          <form class="theform" method="post">
+          <form class="theform" method="post" action="/auth/login">
             {% csrf_token %}
             <div class="inputsec">
-              <label for="login_name">Username/Email:</label>
-              <input class="infoinputs" type="text" id="login_name" name="login_name" required />
+              <label for="login_email">Email:</label>
+              <input class="infoinputs" type="email" id="login_email" name="login_email" required />
             </div>
             <div class="inputsec">
               <label for="login_password1">Password:</label>
               <input class="infoinputs" type="password" id="login_password1" name="login_password1" required />
+            </div>
+            <div class="inputsec errors">
             </div>
             <input class="submit_button" type="submit" value="Login" />
             <div class="otherform"> Don't have an account? <span class="buttontootherform" onclick="showreg()">Register here</span></div>
