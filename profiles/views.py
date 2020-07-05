@@ -3,7 +3,7 @@ from django.core.exceptions import ValidationError
 from django.shortcuts import render, redirect
 
 from .models import Trip
-from .utils import get_error_messages
+from .utils import get_error_messages, make_trip_dict, make_user_dict
 
 User = get_user_model()
 
