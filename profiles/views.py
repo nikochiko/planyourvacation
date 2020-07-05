@@ -65,11 +65,6 @@ def profile(request):
         return redirect('home')
 
 
-def explore(request):
-    if request.user.is_authenticated:
-        return render(request, 'profiles/profile_u2.html', {'user': make_user_dict(request.user), 'trips': [make_trip_dict(trip) for trip in Trip.objects.all()]})
-
-
 def plan(request):
     if request.user.is_authenticated:
         return render(request, 'profiles/plantrip.html', {'user': make_user_dict(request.user)})
