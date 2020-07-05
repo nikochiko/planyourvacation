@@ -1,6 +1,7 @@
 def get_error_message(error):
     return getattr(error, "message", str(error))
 
+
 def get_error_messages(error):
     return getattr(error, "messages", [get_error_message(error)])
 
@@ -20,7 +21,7 @@ def make_user_dict(user):
 def make_trip_dict(trip):
     retval = {}
     retval.update(
-        title = trip.title,
+        title=trip.title,
         description=trip.description,
         creator=make_user_dict(trip.creator),
         date=str(trip.dates),
