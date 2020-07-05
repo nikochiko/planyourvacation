@@ -4,7 +4,7 @@
 
   <head>
 
-    <title>  </title>
+    <title>{{ title }}</title>
 
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -48,6 +48,7 @@
 
           <div class="testcont">
             <form class="plantripform">
+              {% csrf_token %}
               <div class="plangroup">
                 <label for="plantitle"> Title </label>
                 <input class="plantripinput" id="plantitle" type="text" maxlength="70" required />

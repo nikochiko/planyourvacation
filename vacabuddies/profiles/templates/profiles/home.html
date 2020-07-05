@@ -4,7 +4,7 @@
 
   <head>
 
-    <title>  </title>
+    <title>{{ title }}</title>
 
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -47,12 +47,13 @@
 
           <div class="trips_container">
 
+            {% for trip in trips %}
             <div class="itrip_container">
               <div class="tripuserinfo">
                 <div class="tripuserimg_container">
                   <img class="tripuserimg" src="{% static "profiles/9127a595d3a3421d984edc45230f6d9a.jpg" %}" />
                 </div>
-                <div class="tripusername">{{ user.username }}</div>
+                <div class="tripusername">{{ trip.creator.username }}</div>
               </div>
               <div class="tripimg_container">
                 <img class="tripimg" src="{% static "profiles/IMG_71554.jpg" %}" />
@@ -69,6 +70,7 @@
               </div>
               <button class="tripinterested"> Interested </button>
             </div>
+            {% endfor %}
 
             <!-- <div class="itrip_container">
               <div class="tripuserinfo">
