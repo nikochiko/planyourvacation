@@ -27,9 +27,9 @@ def register(request):
         new_user.save()
 
         login(request, new_user)
-        return redirect('')
+        return redirect('home')
     else:
-        return redirect('')
+        return redirect('home')
 
 
 def login_view(request):
@@ -41,7 +41,7 @@ def login_view(request):
 
         if user is not None:
             login(request, user)
-            return redirect('')
+            return redirect('home')
         else:
             return render(request, 'profiles/login.html', {
                 'success': False,
@@ -62,7 +62,7 @@ def profile(request):
     if request.user.is_authenticated:
         return render(request, 'profiles/profile_u1.html', {'user': make_user_dict(request.user), 'planned_trips': [make_trip_dict(trip) for trip in user.planned_trips], 'participated_trips': [make_trip_dict(trip) for trip in user.participated_trips]})
     else:
-        return redirect('')
+        return redirect('home)
 
 
 def explore(request):
