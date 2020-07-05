@@ -2,27 +2,27 @@
     padding-top: 80px;
   }
 
-  .left_container {
-    height: 100%;
-  }
-
   .profile_container {
-    width: 15em;
+    width: 20em;
+    height: 80%;
+    margin-bottom: 10px;
     padding: 20px;
     font-size: 0.8em;
   }
 
   .profileimg_container {
-    width: 50px;
-    height: 50px;
+    width: 70px;
+    height: 70px;
     margin: auto;
     border-radius: 100%;
     overflow: hidden;
   }
 
   .profileimg {
-    width: 100%;
+    width: 70px;
+    height: 70px;
     object-fit: cover;
+    object-position: center;
   }
 
   .nameusername {
@@ -34,10 +34,6 @@
     font-size: 1.5em;
   }
 
-  .username {
-
-  }
-
   .nameusername_sep {
     width: 90%;
     margin: auto;
@@ -45,8 +41,73 @@
   }
 
   .userinfo_container {
-    padding: 10px;
-    margin-bottom: 10px;
+    padding: 0 10px 10px 10px;
+    margin-bottom: 15px;
+    text-align: center;
     background-color: rgba(200, 200, 200, 0.4);
     border-radius: 5px;
+  }
+
+  .userinfotitle {
+    width: 50%;
+    margin: auto;
+    padding: 5px;
+    background-color: rgba(20, 20, 20, 0.4);
+    border-radius: 0 0 10px 10px;
+  }
+
+  .userinfo {
+    margin-top: 10px;
+  }
+
+  .likeplanbutton {
+    display: block;
+    width: 50%;
+    margin: auto;
+    margin-bottom: 10px;
+    padding: 10px;
+    background-color: #3F8B7E;
+    font-size: 1.2em;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+  }
+
+  .switch {
+    position: fixed;
+    display: flex;
+  }
+
+  .switchbutton {
+    padding: 20px;
+    background-color: rgba(20, 20, 20, 1);
+    cursor: pointer;
+  }
+
+  .switchbutton:hover {
+    background-color: rgba(50, 50, 50, 1);
+  }
+
+  .plannedbutton {
+    border-radius: 16px 0 0 0;
+  }
+
+  .participatedbutton {
+    border-left: 1px solid #555;
+    border-radius: 0 0 16px 0;
+  }
+
+  #planned, #participated {
+    margin-top: 60px;
+  }
+
+  .tripspartplantitle {
+    width: 100%;
+    margin-bottom: 20px;
+    font-size: 2em;
+  }
+
+  .hidden {
+    display: none;
   }
