@@ -12,8 +12,8 @@ def make_user_dict(user):
         name=user.last_name,
         email=user.email,
         username=user.username,
-        bio=getattr(user, 'bio', ''),
-        likes=len(user.likes_in.all())
+        bio=getattr(user, "bio", ""),
+        likes=len(user.likes_in.all()),
     )
     return retval
 
