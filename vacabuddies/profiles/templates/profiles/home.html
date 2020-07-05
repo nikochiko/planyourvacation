@@ -1,3 +1,4 @@
+{% load static %}
 <!DOCTYPE html>
 <html lang="en">
 
@@ -8,8 +9,9 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <link rel="stylesheet" type="text/css" href="main.css" />
-    <link rel="stylesheet" type="text/css" href="profile.css" />
+    <link rel="stylesheet" type="text/css" href="{% static "profiles/main.css" %}" />
+    <link rel="stylesheet" type="text/css" href="{% static "profiles/profile.css" %}" />
+    <link rel="stylesheet" type="text/css" href="{% static "profiles/plantrip.css" %}" />
 
     <style>
 
@@ -27,23 +29,22 @@
         <a class="navitem profilenav">
           <div id="navprofile">
             <div id="navuserimg_container">
-              <img id="navuserimg" src="9127a595d3a3421d984edc45230f6d9a.jpg" />
+              <img id="navuserimg" src="{% static "profiles/9127a595d3a3421d984edc45230f6d9a.jpg" %}" />
             </div>
             <div id="navname">Jamie</div>
           </div>
         </a>
-        </div>
       </div>
     </div>
 
     <div id="main_container">
 
-      <div class="left_container">
+      <!-- <div class="left_container">
 
         <div class="profile_container container">
 
           <div class="profileimg_container">
-            <img class="profileimg" src="9127a595d3a3421d984edc45230f6d9a.jpg" />
+            <img class="profileimg" src="{% static "profiles/9127a595d3a3421d984edc45230f6d9a.jpg" %}" />
           </div>
           <div class="nameusername">
             <div class="name"> Jamie Clarke </div>
@@ -74,33 +75,27 @@
 
         </div>
 
-        <button class="likeplanbutton container"> Plan a Trip </button>
-        <button class="likeplanbutton container"> Log out </button>
+        <button class="likeplanbutton container"> Like </button>
 
-      </div>
+      </div> -->
 
       <div class="right_container">
 
         <div class="alltrips_container container">
 
-          <div class="switch">
-            <div class="plannedbutton switchbutton" onclick="shift()">Trips Planned</div>
-            <div class="participatedbutton switchbutton" onclick="reverseshift()">Trips Participated</div>
-          </div>
+          <div class="plantriptitle"> Explore Trips </div>
 
-          <div class="trips_container" id="planned">
-
-            <div class="tripspartplantitle"> Trips Planned </div>
+          <div class="trips_container">
 
             <div class="itrip_container">
               <div class="tripuserinfo">
                 <div class="tripuserimg_container">
-                  <img class="tripuserimg" src="9127a595d3a3421d984edc45230f6d9a.jpg" />
+                  <img class="tripuserimg" src="{% static "profiles/9127a595d3a3421d984edc45230f6d9a.jpg" %}" />
                 </div>
                 <div class="tripusername">@jamie_21</div>
               </div>
               <div class="tripimg_container">
-                <img class="tripimg" src="IMG_71554.jpg" />
+                <img class="tripimg" src="{% static "profiles/IMG_71554.jpg" %}" />
               </div>
               <div class="tripdetials">
                 <div class="triptitle">Backpacking through Barcelona</div>
@@ -118,12 +113,12 @@
             <div class="itrip_container">
               <div class="tripuserinfo">
                 <div class="tripuserimg_container">
-                  <img class="tripuserimg" src="9127a595d3a3421d984edc45230f6d9a.jpg" />
+                  <img class="tripuserimg" src="{% static "profiles/9127a595d3a3421d984edc45230f6d9a.jpg" %}" />
                 </div>
                 <div class="tripusername">@jamie_21</div>
               </div>
               <div class="tripimg_container">
-                <img class="tripimg" src="IMG_71554.jpg" />
+                <img class="tripimg" src="{% static "profiles/IMG_71554.jpg" %}" />
               </div>
               <div class="tripdetials">
                 <div class="triptitle">Backpacking through Barcelona</div>
@@ -141,12 +136,12 @@
             <div class="itrip_container">
               <div class="tripuserinfo">
                 <div class="tripuserimg_container">
-                  <img class="tripuserimg" src="9127a595d3a3421d984edc45230f6d9a.jpg" />
+                  <img class="tripuserimg" src="{% static "profiles/9127a595d3a3421d984edc45230f6d9a.jpg" %}" />
                 </div>
                 <div class="tripusername">@jamie_21</div>
               </div>
               <div class="tripimg_container">
-                <img class="tripimg" src="IMG_71554.jpg" />
+                <img class="tripimg" src="{% static "profiles/IMG_71554.jpg" %}" />
               </div>
               <div class="tripdetials">
                 <div class="triptitle">Backpacking through Barcelona</div>
@@ -164,12 +159,12 @@
             <div class="itrip_container">
               <div class="tripuserinfo">
                 <div class="tripuserimg_container">
-                  <img class="tripuserimg" src="9127a595d3a3421d984edc45230f6d9a.jpg" />
+                  <img class="tripuserimg" src="{% static "profiles/9127a595d3a3421d984edc45230f6d9a.jpg" %}" />
                 </div>
                 <div class="tripusername">@jamie_21</div>
               </div>
               <div class="tripimg_container">
-                <img class="tripimg" src="IMG_71554.jpg" />
+                <img class="tripimg" src="{% static "profiles/IMG_71554.jpg" %}" />
               </div>
               <div class="tripdetials">
                 <div class="triptitle">Backpacking through Barcelona</div>
@@ -187,12 +182,12 @@
             <div class="itrip_container">
               <div class="tripuserinfo">
                 <div class="tripuserimg_container">
-                  <img class="tripuserimg" src="9127a595d3a3421d984edc45230f6d9a.jpg" />
+                  <img class="tripuserimg" src="{% static "profiles/9127a595d3a3421d984edc45230f6d9a.jpg" %}" />
                 </div>
                 <div class="tripusername">@jamie_21</div>
               </div>
               <div class="tripimg_container">
-                <img class="tripimg" src="IMG_71554.jpg" />
+                <img class="tripimg" src="{% static "profiles/IMG_71554.jpg" %}" />
               </div>
               <div class="tripdetials">
                 <div class="triptitle">Backpacking through Barcelona</div>
@@ -210,12 +205,12 @@
             <div class="itrip_container">
               <div class="tripuserinfo">
                 <div class="tripuserimg_container">
-                  <img class="tripuserimg" src="9127a595d3a3421d984edc45230f6d9a.jpg" />
+                  <img class="tripuserimg" src="{% static "profiles/9127a595d3a3421d984edc45230f6d9a.jpg" %}" />
                 </div>
                 <div class="tripusername">@jamie_21</div>
               </div>
               <div class="tripimg_container">
-                <img class="tripimg" src="IMG_71554.jpg" />
+                <img class="tripimg" src="{% static "profiles/IMG_71554.jpg" %}" />
               </div>
               <div class="tripdetials">
                 <div class="triptitle">Backpacking through Barcelona</div>
@@ -233,112 +228,12 @@
             <div class="itrip_container">
               <div class="tripuserinfo">
                 <div class="tripuserimg_container">
-                  <img class="tripuserimg" src="9127a595d3a3421d984edc45230f6d9a.jpg" />
+                  <img class="tripuserimg" src="{% static "profiles/9127a595d3a3421d984edc45230f6d9a.jpg" %}" />
                 </div>
                 <div class="tripusername">@jamie_21</div>
               </div>
               <div class="tripimg_container">
-                <img class="tripimg" src="IMG_71554.jpg" />
-              </div>
-              <div class="tripdetials">
-                <div class="triptitle">Backpacking through Barcelona</div>
-                <hr class="just_sep" />
-                <div class="tripdate">Date: 5 Jan 2020</div>
-                <div class="tripelocation">Location: Barcelona</div>
-                <hr class="just_sep" />
-                <div class="tripinfo">
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure d
-                </div>
-              </div>
-              <button class="tripinterested"> Interested </button>
-            </div>
-
-          </div>
-
-
-
-          <div class="trips_container hidden" id="participated">
-
-            <div class="tripspartplantitle"> Trips Participated </div>
-
-            <div class="itrip_container">
-              <div class="tripuserinfo">
-                <div class="tripuserimg_container">
-                  <img class="tripuserimg" src="9127a595d3a3421d984edc45230f6d9a.jpg" />
-                </div>
-                <div class="tripusername">@jamie_21</div>
-              </div>
-              <div class="tripimg_container">
-                <img class="tripimg" src="fbbde3cf1c727e933318cfd3191b1d61.jpg" />
-              </div>
-              <div class="tripdetials">
-                <div class="triptitle">Backpacking through Barcelona</div>
-                <hr class="just_sep" />
-                <div class="tripdate">Date: 5 Jan 2020</div>
-                <div class="tripelocation">Location: Barcelona</div>
-                <hr class="just_sep" />
-                <div class="tripinfo">
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure d
-                </div>
-              </div>
-              <button class="tripinterested"> Interested </button>
-            </div>
-
-            <div class="itrip_container">
-              <div class="tripuserinfo">
-                <div class="tripuserimg_container">
-                  <img class="tripuserimg" src="9127a595d3a3421d984edc45230f6d9a.jpg" />
-                </div>
-                <div class="tripusername">@jamie_21</div>
-              </div>
-              <div class="tripimg_container">
-                <img class="tripimg" src="fbbde3cf1c727e933318cfd3191b1d61.jpg" />
-              </div>
-              <div class="tripdetials">
-                <div class="triptitle">Backpacking through Barcelona</div>
-                <hr class="just_sep" />
-                <div class="tripdate">Date: 5 Jan 2020</div>
-                <div class="tripelocation">Location: Barcelona</div>
-                <hr class="just_sep" />
-                <div class="tripinfo">
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure d
-                </div>
-              </div>
-              <button class="tripinterested"> Interested </button>
-            </div>
-
-            <div class="itrip_container">
-              <div class="tripuserinfo">
-                <div class="tripuserimg_container">
-                  <img class="tripuserimg" src="9127a595d3a3421d984edc45230f6d9a.jpg" />
-                </div>
-                <div class="tripusername">@jamie_21</div>
-              </div>
-              <div class="tripimg_container">
-                <img class="tripimg" src="fbbde3cf1c727e933318cfd3191b1d61.jpg" />
-              </div>
-              <div class="tripdetials">
-                <div class="triptitle">Backpacking through Barcelona</div>
-                <hr class="just_sep" />
-                <div class="tripdate">Date: 5 Jan 2020</div>
-                <div class="tripelocation">Location: Barcelona</div>
-                <hr class="just_sep" />
-                <div class="tripinfo">
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure d
-                </div>
-              </div>
-              <button class="tripinterested"> Interested </button>
-            </div>
-
-            <div class="itrip_container">
-              <div class="tripuserinfo">
-                <div class="tripuserimg_container">
-                  <img class="tripuserimg" src="9127a595d3a3421d984edc45230f6d9a.jpg" />
-                </div>
-                <div class="tripusername">@jamie_21</div>
-              </div>
-              <div class="tripimg_container">
-                <img class="tripimg" src="fbbde3cf1c727e933318cfd3191b1d61.jpg" />
+                <img class="tripimg" src="{% static "profiles/IMG_71554.jpg" %}" />
               </div>
               <div class="tripdetials">
                 <div class="triptitle">Backpacking through Barcelona</div>
@@ -354,33 +249,11 @@
             </div>
 
           </div>
-
         </div>
 
       </div>
 
     </div>
-
-    <script>
-
-      var tripsplanned = document.getElementById('planned');
-      var tripsparticipated = document.getElementById('participated');
-
-      function shift() {
-        if(tripsplanned.className == "trips_container hidden"){
-          tripsplanned.className = "trips_container";
-          tripsparticipated.className = "trips_container hidden";
-        }
-      }
-
-      function reverseshift() {
-        if(tripsparticipated.className == "trips_container hidden") {
-          tripsplanned.className = "trips_container hidden";
-          tripsparticipated.className = "trips_container";
-        }
-      }
-
-    </script>
 
   </body>
 
