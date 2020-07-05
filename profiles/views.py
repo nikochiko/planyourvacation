@@ -3,7 +3,7 @@ from django.core.exceptions import ValidationError
 from django.shortcuts import render, redirect
 
 from .models import Trip
-from .utils import get_error_messages, make_user_dict, make_trip_dict
+from .utils import get_error_messages
 
 User = get_user_model()
 
@@ -61,7 +61,7 @@ def home(request):
 
 def profile(request):
     if request.user.is_authenticated:
-        return render(request, 'profiles/profile_u1.html', {'user': make_user_dict(request.user), 'planned_trips': [make_trip_dict(trip) for trip in request.user.planned_trips], 'participated_trips': [make_trip_dict(trip) for trip in request.user.participated_trips]})
+        return render(request, 'profiles/profile_u1.html', {'user': make_user_dict(request.user), 'planned_trips': [make_trip_dict(trip) for trip in user.planned_trips], 'participated_trips': [make_trip_dict(trip) for trip in user.participated_trips]})
     else:
         return redirect(request, '/')
 

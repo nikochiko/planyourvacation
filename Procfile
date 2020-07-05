@@ -1,1 +1,1 @@
-web: daphne -p $PORT vacabuddies/vacabuddies/wsgi:application
+web: python vacabuddies/manage.py runserver
