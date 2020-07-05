@@ -14,7 +14,6 @@ def register(request):
         email = request.POST['reg_email']
         name = request.POST['reg_name']
         password1 = request.POST['reg_password1']
-        password2 = request.POST['reg_password2']
 
         new_user = User(username=username, email=email, last_name=name)
         new_user.set_password(password1)
