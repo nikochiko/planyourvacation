@@ -60,7 +60,7 @@ def home(request):
 
 def profile(request):
     if request.user.is_authenticated:
-        return render(request, 'profiles/profile_u1.html', {'user': make_user_dict(request.user), 'planned_trips': [make_trip_dict(trip) for trip in request.user.planned_trips], 'participated_trips': [make_trip_dict(trip) for trip in request.user.participated_trips]})
+        return render(request, 'profiles/profile_u1.html', {'user': make_user_dict(request.user), 'planned_trips': [make_trip_dict(trip) for trip in request.user.planned_trips.all()], 'participated_trips': [make_trip_dict(trip) for trip in request.user.participated_trips.all()]})
     else:
         return redirect('home')
 
