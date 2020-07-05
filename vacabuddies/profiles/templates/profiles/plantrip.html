@@ -47,23 +47,23 @@
           <div class="plantriptitle"> Plan a Trip </div>
 
           <div class="testcont">
-            <form class="plantripform">
+            <form class="plantripform" method="post" action="/plantrip">
               {% csrf_token %}
               <div class="plangroup">
                 <label for="plantitle"> Title </label>
-                <input class="plantripinput" id="plantitle" type="text" maxlength="70" required />
+                <input class="plantripinput" name="title" id="plantitle" type="text" maxlength="70" required />
               </div>
               <div class="plangroup">
                 <label for="plandestination"> Destination </label>
-                <input class="plantripinput" id="plandestination" type="text" maxlength="30" required />
+                <input class="plantripinput" name="location" id="plandestination" type="text" maxlength="30" required />
               </div>
               <div class="plangroup">
                 <label for="plandate"> Date </label>
-                <input class="plantripinput" id="plandate" type="text" required />
+                <input class="plantripinput" name="dates" id="plandate" type="text" required />
               </div>
               <div class="plangroup">
                 <label for="plandescription"> Description </label>
-                <textarea class="plantripinput" id="plandescription" type="text" maxlength="250" required></textarea>
+                <textarea class="plantripinput" name="description" id="plandescription" type="text" maxlength="250" required></textarea>
               </div>
               <input class="finsishplan" type="submit" value="Finish Plan">
             </form>
