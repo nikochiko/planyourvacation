@@ -1,2 +1,4 @@
 django==3.0.7
 psycopg2==2.8.5
+gunicorn
+django-heroku

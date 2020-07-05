@@ -1,1 +1,1 @@
-web: python vacabuddies/manage.py runserver
+web: gunicorn vacabuddies.wsgi
