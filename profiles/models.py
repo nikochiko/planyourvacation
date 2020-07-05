@@ -24,3 +24,5 @@ class Trip(models.Model):
     location = models.CharField(max_length=255)
     dates = models.CharField(max_length=255)
     description = models.TextField()
+    creator = models.ForeignKey(User, on_delete=models.CASCADE, related_name="planned_trips")
+    participants = models.ManyToManyField(User, related_name='participated_trips')
